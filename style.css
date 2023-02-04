@@ -79,7 +79,6 @@ table, th, td {
     text-align: center;
 }
 
-
 .submit, .reset {
     background-color: rgba(0, 0, 0, 0.05);
     clear: both;
@@ -98,7 +97,6 @@ table, th, td {
     background-color: rgba(0, 0, 0, 0.08);
     cursor: pointer;
 }
-
 
 #results {
     display: none;

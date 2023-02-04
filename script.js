@@ -1,12 +1,9 @@
-// myTable.rows.length ==> ile wierszy
-// myTable.rows[0].cells.length ==>ile kolumn
-
 //adding parameters -> rows
 const addParameter=()=>{
     const myTable=document.getElementById("DM_table");
     const rowStructure=document.getElementById("row_structure").cloneNode(true);
     myTable.appendChild(rowStructure);
-    rowStructure.id = `p_id${myTable.rows.length-2}`;
+    //rowStructure.id = `p_id${myTable.rows.length-2}`;
     }
 
 const addingP=document.getElementById("addP");
@@ -44,7 +41,7 @@ function submitFunction(event){
 }
 
 //CALCULATIONS
-//calculation1
+//calculation1 ->number value
 function KepnerTregoeMethod(){
   let myTable=document.getElementById('DM_table');
   const answerTable=[];
@@ -76,7 +73,7 @@ function KepnerTregoeMethod(){
 
   document.getElementById('results').style.display='block';
 
-//chart1
+//chart1 -> create and display
   let alternativeNames=[];
   for(let i=2;i<myTable.rows[0].cells.length;++i){
     alternativeNames.push(myTable.rows[0].cells[i].getElementsByTagName("input")[0].value);
@@ -121,10 +118,9 @@ function KepnerTregoeMethod(){
 	});
 
 chart2();
- //chart2
-
 }
 
+//chart2 -> create and display
 function chart2(){
   let myTable=document.getElementById('DM_table');
   let parameterWeight=[];
